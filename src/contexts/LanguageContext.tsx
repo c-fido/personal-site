@@ -56,9 +56,9 @@ const translations: Record<Lang, Record<string, any>> = {
     about: {
       heading: 'about()',
       paragraphs: [
-        "> Passionate developer with a love for creating elegant solutions to complex problems. I specialize in building modern web applications that are both beautiful and functional.",
-        "> When I'm not coding, you can find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.",
-        "> I believe in writing clean, maintainable code and creating user experiences that make a difference.",
+        "> Junior at Wesleyan University studying Computer Science and German. O",
+        "> When I'm not coding, you can find me running, reading, hiking, or playing video games! Lover of fantasy books, sci-fi, and all things tech.",
+        "> I love writing and figuring out new ways to solve problems. If you have a book recommendation, feel free to reach out!",
       ],
     },
     skills: {
@@ -126,9 +126,9 @@ const translations: Record<Lang, Record<string, any>> = {
     about: {
       heading: 'über()',
       paragraphs: [
-        "> Leidenschaftlicher Entwickler mit einer Vorliebe dafür, elegante Lösungen für komplexe Probleme zu schaffen. Ich spezialisiere mich auf moderne Webanwendungen, die sowohl schön als auch funktional sind.",
-        "> Wenn ich nicht programmiere, erkunde ich neue Technologien, trage zu Open Source bei oder teile Wissen mit der Entwickler-Community.",
-        "> Ich glaube an sauberen, wartbaren Code und daran, Benutzererlebnisse zu schaffen, die einen Unterschied machen.",
+        "> Student im dritten Jahr an der Wesleyan University, studiert Informatik und Deutsch. O",
+        "> Wenn ich nicht gerade programmiere, bin ich beim Laufen, Lesen, Wandern oder Videospielen anzutreffen! Ich liebe Fantasy-Bücher, Science-Fiction und alles, was mit Technik zu tun hat.",
+        "> Ich liebe es zu schreiben und neue Wege zur Lösung von Problemen zu finden. Wenn Sie eine Buchempfehlung haben, melden Sie sich gerne bei mir!",
       ],
     },
     skills: {
@@ -154,7 +154,7 @@ const translations: Record<Lang, Record<string, any>> = {
 
 export const LanguageContext = createContext<LanguageContextType>({
   lang: 'en',
-  setLanguage: () => {},
+  setLanguage: () => { },
   t: (k: string) => k,
 });
 

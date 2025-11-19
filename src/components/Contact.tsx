@@ -49,7 +49,7 @@ export function Contact() {
                     <Linkedin size={24} />
                   </a>
                   <a
-                    href="https://goodreads.com"
+                    href="https://www.goodreads.com/user/show/193691043-carlo-fedolfi"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-cyan-600 hover:text-cyan-400 transition-colors"
