@@ -56,7 +56,7 @@ const translations: Record<Lang, Record<string, any>> = {
     about: {
       heading: 'about()',
       paragraphs: [
-        "> Junior at Wesleyan University studying Computer Science and German. O",
+        "> Junior at Wesleyan University studying Computer Science and German.",
         "> When I'm not coding, you can find me running, reading, hiking, or playing video games! Lover of fantasy books, sci-fi, and all things tech.",
         "> I love writing and figuring out new ways to solve problems. If you have a book recommendation, feel free to reach out!",
       ],
@@ -126,7 +126,7 @@ const translations: Record<Lang, Record<string, any>> = {
     about: {
       heading: 'über()',
       paragraphs: [
-        "> Student im dritten Jahr an der Wesleyan University, studiert Informatik und Deutsch. O",
+        "> Student im dritten Jahr an der Wesleyan University, studiert Informatik und Deutsch.",
         "> Wenn ich nicht gerade programmiere, bin ich beim Laufen, Lesen, Wandern oder Videospielen anzutreffen! Ich liebe Fantasy-Bücher, Science-Fiction und alles, was mit Technik zu tun hat.",
         "> Ich liebe es zu schreiben und neue Wege zur Lösung von Problemen zu finden. Wenn Sie eine Buchempfehlung haben, melden Sie sich gerne bei mir!",
       ],

@@ -55,9 +55,9 @@
         "typescript": "^5.9.3",
         "vite": "6.3.5"
     },
-  "scripts": {
-    "build": "vite build",
-    "predeploy": "npm run build && echo \"gfedolfi.dev\" > build/CNAME",
-    "deploy": "gh-pages -d build"
-  }
+    "scripts": {
+        "build": "vite build",
+        "predeploy": "npm run build && echo \"gfedolfi.dev\" > build/CNAME",
+        "deploy": "gh-pages -d build"
+    }
 }
