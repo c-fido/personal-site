@@ -57,7 +57,7 @@
     },
   "scripts": {
     "build": "vite build",
-    "predeploy": "npm run build && echo \"gfedolfi.dev\" > dist/CNAME",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build && echo \"gfedolfi.dev\" > build/CNAME",
+    "deploy": "gh-pages -d build"
   }
 }
