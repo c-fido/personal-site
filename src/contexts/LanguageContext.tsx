@@ -56,9 +56,9 @@ const translations: Record<Lang, Record<string, any>> = {
     about: {
       heading: 'about()',
       paragraphs: [
-        "{'>'} Passionate developer with a love for creating elegant solutions to complex problems. I specialize in building modern web applications that are both beautiful and functional.",
-        "{'>'} When I'm not coding, you can find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.",
-        "{'>'} I believe in writing clean, maintainable code and creating user experiences that make a difference.",
+        "> Passionate developer with a love for creating elegant solutions to complex problems. I specialize in building modern web applications that are both beautiful and functional.",
+        "> When I'm not coding, you can find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.",
+        "> I believe in writing clean, maintainable code and creating user experiences that make a difference.",
       ],
     },
     skills: {
@@ -126,9 +126,9 @@ const translations: Record<Lang, Record<string, any>> = {
     about: {
       heading: 'über()',
       paragraphs: [
-        "{'>'} Leidenschaftlicher Entwickler mit einer Vorliebe dafür, elegante Lösungen für komplexe Probleme zu schaffen. Ich spezialisiere mich auf moderne Webanwendungen, die sowohl schön als auch funktional sind.",
-        "{'>'} Wenn ich nicht programmiere, erkunde ich neue Technologien, trage zu Open Source bei oder teile Wissen mit der Entwickler-Community.",
-        "{'>'} Ich glaube an sauberen, wartbaren Code und daran, Benutzererlebnisse zu schaffen, die einen Unterschied machen.",
+        "> Leidenschaftlicher Entwickler mit einer Vorliebe dafür, elegante Lösungen für komplexe Probleme zu schaffen. Ich spezialisiere mich auf moderne Webanwendungen, die sowohl schön als auch funktional sind.",
+        "> Wenn ich nicht programmiere, erkunde ich neue Technologien, trage zu Open Source bei oder teile Wissen mit der Entwickler-Community.",
+        "> Ich glaube an sauberen, wartbaren Code und daran, Benutzererlebnisse zu schaffen, die einen Unterschied machen.",
       ],
     },
     skills: {
