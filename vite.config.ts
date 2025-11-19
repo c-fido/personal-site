@@ -57,4 +57,6 @@
       port: 3000,
       open: true,
     },
+    // vite.config.ts
+    base: '/', // <- replace REPO_NAME with your repository name
   });

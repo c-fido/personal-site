@@ -51,11 +51,13 @@
         "@types/react": "^19.2.6",
         "@types/react-dom": "^19.2.3",
         "@vitejs/plugin-react-swc": "^3.11.0",
+        "gh-pages": "^6.3.0",
         "typescript": "^5.9.3",
         "vite": "6.3.5"
     },
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    }
+  "scripts": {
+    "build": "vite build",
+    "predeploy": "npm run build && echo \"gfedolfi.dev\" > dist/CNAME",
+    "deploy": "gh-pages -d dist"
+  }
 }
