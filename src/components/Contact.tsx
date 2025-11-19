@@ -1,19 +1,23 @@
 import { Mail, Github, Linkedin, BookOpen } from 'lucide-react';
+import { useContext } from 'react';
+import { LanguageContext } from '../contexts/LanguageContext';
 
 export function Contact() {
+  const { t } = useContext(LanguageContext);
+
   return (
     <section id="contact" className="relative py-6 px-6">
       <div className="container mx-auto max-w-4xl">
-        <div className="space-y-12">
+        <div className="space-y-6">
           <h2 className="text-cyan-400 font-mono flex items-center gap-3">
             <span className="text-cyan-600">04.</span>
-            contact()
+            {t('contact.heading')}
           </h2>
 
           <div className="border border-cyan-950 bg-black/40 p-8">
             <div className="space-y-6">
               <p className="text-cyan-600 font-mono">
-                {'>'} Available for new opportunities! If you have a question, or just have a book recommendation, feel free to send me an email or connect via social media.
+                {'>'} {t('contact.body')}
               </p>
 
               <div className="flex flex-col gap-4 pt-4">

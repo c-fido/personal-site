@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import { Navigation } from './components/Navigation';
+import { LanguageProvider, LanguageContext } from './contexts/LanguageContext';
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -16,6 +17,16 @@ export default function App() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  return (
+    <LanguageProvider>
+      <AppInner scrolled={scrolled} />
+    </LanguageProvider>
+  );
+}
+
+function AppInner({ scrolled }: { scrolled: boolean }) {
+  const { t } = useContext(LanguageContext);
 
   return (
     <div className="min-h-screen bg-black text-cyan-400">
@@ -34,7 +45,7 @@ export default function App() {
       
       <footer className="relative border-t border-cyan-950 bg-black py-8">
         <div className="container mx-auto px-6 text-center text-cyan-700">
-          <p className="font-mono text-sm">© 2025 - All rights reserved</p>
+          <p className="font-mono text-sm">{t('footer.copy')}</p>
         </div>
       </footer>
     </div>

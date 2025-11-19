@@ -195,7 +195,6 @@
   iframe,
   embed,
   object {
-    vertical-align: middle;
     display: block;
   }
 
@@ -747,8 +746,30 @@
 
   .text-green-400 {
     color: var(--color-green-400);
+    display:inline-flex;
   }
 
+  .text-green-400 .type {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* start hidden */
+    animation: typing 2s steps(17, end) 1 forwards;
+    font-family: var(--font-mono);
+    position: relative;
+    border-right: 2px solid;
+    white-space: nowrap;
+    animation:
+      typing 2s steps(17),
+      cursor .4s step-end infinite alternate;
+  }
+
+  @keyframes cursor{
+    50% { border-color: transparent}
+  }
+  @keyframes typing{
+    from {width: 0}
+  }
   .text-green-500 {
     color: var(--color-green-500);
   }

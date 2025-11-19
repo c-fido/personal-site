@@ -1,26 +1,31 @@
+import { useContext } from 'react';
+import { LanguageContext } from '../contexts/LanguageContext';
+
 const skillCategories = [
   {
     category: 'Frontend',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js'],
+    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'JavaScript'],
   },
   {
     category: 'Backend',
-    skills: ['Node.js', 'Python', 'Express', 'FastAPI', 'PostgreSQL'],
+    skills: ['Node.js', 'Python',  'FastAPI', 'PostgreSQL', 'PHP'],
   },
   {
     category: 'Tools',
-    skills: ['Git', 'Docker', 'AWS', 'Figma', 'VS Code'],
+    skills: ['Git', 'Figma', 'VS Code', 'LiteLLM'],
   },
 ];
 
 export function Skills() {
+  const { t } = useContext(LanguageContext);
+
   return (
     <section id="skills" className="relative py-6 px-6">
       <div className="container mx-auto max-w-4xl">
         <div className="space-y-12">
           <h2 className="text-cyan-400 font-mono flex items-center gap-3">
             <span className="text-cyan-600">03.</span>
-            skills()
+            {t('skills.heading')}
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -30,7 +35,7 @@ export function Skills() {
                 className="border border-cyan-950 bg-black/40 p-6"
               >
                 <h3 className="text-cyan-400 font-mono mb-4">
-                  {category.category.toLowerCase()}
+                  {t(`skills.categories.${category.category}`) || category.category}
                 </h3>
                 <ul className="space-y-2">
                   {category.skills.map((skill) => (
